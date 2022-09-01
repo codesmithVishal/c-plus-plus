@@ -5,6 +5,11 @@ using namespace std;
 int fun(int *, int *);
 int main()
 {   
+ 
+
+
+//no name 
+
     int a,b,c;     
     cout<<"Enter any two value: "<<endl;
     cin>>a>>b;
