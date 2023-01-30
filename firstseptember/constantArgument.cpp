@@ -17,6 +17,7 @@ int main()
     int z = areaofcircle(r, &pi);
     cout<<"Area of circle is = "<< z;
 }
+
 int areaofcircle(int r, float *pi)
 {
     int a= 10;

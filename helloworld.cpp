@@ -1,4 +1,4 @@
-// hello world
+g// hello world
 #include<iostream>
 using namespace std;
 void message();
