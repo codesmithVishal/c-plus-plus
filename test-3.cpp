@@ -6,5 +6,5 @@ using namespace std;
 int main()
 {
    cout<<max(2,12); 
-return 0;
+return 1;
 }
