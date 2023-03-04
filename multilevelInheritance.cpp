@@ -1,39 +1,68 @@
 /*Program definition: */
-
 #include <iostream>
 using namespace std;
-class base1
+class student
 {
-    int a;
+protected:
+    int rollNo;
 
 public:
-    int b;
-    int setdata(int, int);
-    int viewdata();
+    int get_rollNo(int);
+    void set_rollNo();
 };
-
-int base1::setdata(int value1, int value2)
+int student::get_rollNo(int number)
 {
-    a = value1;
-    b = value2;
+    rollNo = number;
 }
-int base1::viewdata()
+void student::set_rollNo()
 {
-    cout << "Value1 = " << a << endl
-         << "Value2 = " << b << endl;
+    cout << rollNo << endl;
 }
-
-class base2
+class marks : public student
 {
+protected:
+    float maths;
+    float physics;
+
 public:
+    int set_mark(int m1, int m2);
+    void display_mark();
 };
+int marks::set_mark(int m1, int m2)
+{
+    maths = m1;
+    physics = m2;
+}
 
+void marks::display_mark()
+{
+    cout << "Maths =  " << maths << endl
+         << "physics " << physics << endl;
+}
+
+class result : public marks
+{
+    int persentile;
+
+public:
+    float percentage()
+    {
+        persentile = (maths + physics) / 2;
+    }
+    void percentegfdata()
+    {
+        cout << endl
+             << " Student roll No " << rollNo << " Maths : " << maths << " physic= " << physics <<" Percentage ="<< persentile << " % " <<endl; 
+    }
+};
 int main()
 {
-
-    base1 obj1;
-    obj1.setdata(5, 6);
-    obj1.viewdata();
-
+    result s1;
+    s1.get_rollNo(10);
+    s1.set_rollNo();
+    s1.set_mark(56.0,78.90);    
+    s1.display_mark();
+    s1.percentage();
+    s1.percentegfdata();
     return 0;
 }

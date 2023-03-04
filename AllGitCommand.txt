@@ -1,0 +1,32 @@
+Here I  am writting all gitcommandwhich help developer to understand git properly 
+// Begining
+1. git config - for git configure 
+    syntax:
+        - git config --global user.name { Your name }     note: anything  written bracket is user input 
+
+        -git config --global.email { Email}
+
+To see your user name and email your should type
+    Syntax:
+        - git config --global user.name 
+        - git config --global user.email
+
+2. To initialized git repository
+    syntax: 
+        - git init      note: this will initialize git repository and crete hidden folder .git
+        - ls -lart      note: to see hidden folder iside path
+
+3. To check git status  
+    syntax: 
+        - git status    note: this will check untrack files in directory 
+
+4. To add file into stage area
+    syntax: 
+        -git add {file name}  Note:
+        - git add -a      Note: to add all untracked file into stagig are; 
+
+5. To perform the commit
+    commit is like taking snapshort of programe or you can say take photo  graph
+    syntax: 
+        - git commit
+
