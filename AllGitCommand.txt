@@ -1,3 +1,6 @@
+Github username: codesmithvishal
+password : M0t0@100
+
 Here I  am writting all gitcommandwhich help developer to understand git properly 
 // Begining
 1. git config - for git configure 
@@ -23,10 +26,42 @@ To see your user name and email your should type
 4. To add file into stage area
     syntax: 
         -git add {file name}  Note:
-        - git add -a      Note: to add all untracked file into stagig are; 
+        - git add -A      Note: to add all untracked file into stagig are; 
 
 5. To perform the commit
     commit is like taking snapshort of programe or you can say take photo  graph
     syntax: 
-        - git commit
+        - git commit -m "Your message here"
+
+6. To reveret change or revert modified file
+    syntax:
+        - git checkout -f Note: to revert modified file 
+        (Chhookra e bagadi nakhe file to chhelu commit par layi jay)
+
+7. to get history of commit;  
+    syntax: 
+        - git log -p {number of commit you want see} 
+        
+8. To check if change happen after staging,  
+    If any change happen after staging area
+    Syntax:  
+        - git diff   Note: change in file        
+        - git diff --stage   note:2 use to see different between last commit and staging area. 
+
+9. To remove file from git commit or from working directory staging  area; 
+    Syntax:
+        - git rm {file Name with extension};  
+        - git rm --cached  ot to remove working file from cashed; 
+    
+
+10. to short status of file;   
+    Syntax: 
+        - git status -s
+
+11. To get branch  
+    syntax: 
+        - git branch Note: by this command youwill get branch list 
+        - git checkout { branch} which will navigate to 
+
+
 
