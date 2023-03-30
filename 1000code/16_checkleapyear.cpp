@@ -2,13 +2,12 @@
 
 #include <iostream>
 using namespace std;
-
 int main()
 {
     int year;
-    cout << "Enter the leap year" << endl;
+    cout <<"Enter the leap year"<< endl;
     cin >> year;
-    if (year % 4 == 00)
+    if (year % 4 == 0)
     {
         cout << year << " Year is leap year: " << endl;
     }
